@@ -25,8 +25,10 @@ namespace Disassembler.Service.Impl
 
                 var classInfo = new ClassInfo(type);
                 namespaceInfo.Classes.Add(classInfo);
-                const BindingFlags bindingFlags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static;
-                classInfo.Constructors.AddRange(type.GetConstructors(bindingFlags).Where(IsNotCompilerGeneratedAttribute));
+                const BindingFlags bindingFlags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic |
+                                                  BindingFlags.Static;
+                classInfo.Constructors.AddRange(type.GetConstructors(bindingFlags)
+                    .Where(IsNotCompilerGeneratedAttribute));
                 classInfo.Properties.AddRange(type.GetProperties(bindingFlags).Where(IsNotCompilerGeneratedAttribute));
                 classInfo.Fields.AddRange(type.GetFields(bindingFlags).Where(IsNotCompilerGeneratedAttribute));
                 foreach (var methodInfo in type.GetMethods(bindingFlags))
@@ -53,7 +55,8 @@ namespace Disassembler.Service.Impl
                     }
                     else
                     {
-                        if (IsNotCompilerGeneratedAttribute(methodInfo)) classInfo.Methods.Add(new Entity.MethodInfo(methodInfo));
+                        if (IsNotCompilerGeneratedAttribute(methodInfo))
+                            classInfo.Methods.Add(new Entity.MethodInfo(methodInfo));
                     }
             }
 

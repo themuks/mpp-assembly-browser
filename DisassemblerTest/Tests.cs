@@ -6,7 +6,7 @@ using NUnit.Framework;
 
 namespace DisassemblerTest
 {
-    class Foo
+    internal class Foo
     {
         public static Foo CreateFromFuncs<T1, T2>(Func<T1, T2> f1, Func<T2, T1> f2)
         {
@@ -18,7 +18,7 @@ namespace DisassemblerTest
     {
         public static int WordCount(this string str)
         {
-            return str.Split(new char[] {' ', '.', '?'},
+            return str.Split(new[] {' ', '.', '?'},
                 StringSplitOptions.RemoveEmptyEntries).Length;
         }
 
