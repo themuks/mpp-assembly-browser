@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Admin\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Admin\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_AssemblyBrowser.209987391.00" t="ExcludeRecursive" />
+    <e p="E:\Projects\C# projects\AssemblyBrowser" t="IncludeFlat">
+      <e p="AssemblyBrowser.sln" t="IncludeFlat" />
+      <e p="AssemblyBrowserApplication" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="AssemblyBrowserApplication.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="DisassemblerModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="App.g.cs" t="Include" />
+            <e p="Views" t="Include">
+              <e p="Windows" t="Include">
+                <e p="MainWindow.g.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+        </e>
+        <e p="ViewModels" t="Include">
+          <e p="Command" t="Include">
+            <e p="RelayCommand.cs" t="Include" />
+          </e>
+          <e p="Converter" t="Include">
+            <e p="ClassConverter.cs" t="Include" />
+            <e p="ConstructorConverter.cs" t="Include" />
+            <e p="FieldConverter.cs" t="Include" />
+            <e p="MethodConverter.cs" t="Include" />
+            <e p="TypenameBuilder.cs" t="Include" />
+          </e>
+          <e p="DisassemblerViewModel.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="Windows" t="Include">
+            <e p="MainWindow.xaml" t="Include" />
+            <e p="MainWindow.xaml.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Disassembler" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Disassembler.csproj" t="IncludeRecursive" />
+        <e p="Entity" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="ClassInfo.cs" t="Include" />
+          <e p="MethodInfo.cs" t="Include" />
+          <e p="NamespaceInfo.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Service" t="Include">
+          <e p="IDisassembler.cs" t="Include" />
+          <e p="Impl" t="Include">
+            <e p="Disassembler.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="DisassemblerTest" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DisassemblerTest.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Tests.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

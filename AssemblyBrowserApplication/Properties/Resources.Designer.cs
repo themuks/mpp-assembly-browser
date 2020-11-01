@@ -45,7 +45,7 @@ namespace AssemblyBrowser.Properties
                 if ((resourceMan == null))
                 {
                     global::System.Resources.ResourceManager temp =
-                        new global::System.Resources.ResourceManager("AssemblyBrowser.Properties.Resources",
+                        new global::System.Resources.ResourceManager("AssemblyBrowserApplication.Properties.Resources",
                             typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
