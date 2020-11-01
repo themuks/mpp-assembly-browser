@@ -27,7 +27,7 @@
                     <HierarchicalDataTemplate DataType="{x:Type reflection:PropertyInfo}">
                         <TextBlock Text="{Binding Converter={StaticResource FieldConverter}}" />
                     </HierarchicalDataTemplate>
-                    <HierarchicalDataTemplate DataType="{x:Type reflection:MethodInfo}">
+                    <HierarchicalDataTemplate DataType="{x:Type disassembler:MethodInfo}">
                         <TextBlock Text="{Binding Converter={StaticResource MethodConverter}}" />
                     </HierarchicalDataTemplate>
                     <HierarchicalDataTemplate DataType="{x:Type reflection:ConstructorInfo}">

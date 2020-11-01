@@ -14,52 +14,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ec74fba-5f10-437c-888b-325021e0e66d" name="Default Changelist" comment="init: project create">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowser.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/App.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/App.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/App.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/AssemblyBrowserApplication.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/Models/DisassemblerModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Command/RelayCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Converter/ClassConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Converter/ConstructorConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Converter/FieldConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Converter/MethodConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Converter/TypenameBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/DisassemblerViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/Views/Windows/MainWindow.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Disassembler/Disassembler.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Disassembler/Entity/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Disassembler/Entity/ClassInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Disassembler/Entity/MethodInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Disassembler/Entity/NamespaceInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Disassembler/Service/IDisassembler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Disassembler/Service/Impl/Disassembler.cs" afterDir="false" />
+    <list default="true" id="6ec74fba-5f10-437c-888b-325021e0e66d" name="Default Changelist" comment="feat: add assembly browser">
       <change afterPath="$PROJECT_DIR$/DisassemblerTest/DisassemblerTest.csproj" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DisassemblerTest/Tests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DisassemblerTest/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowser.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/App.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/App.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/App.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/AssemblyBrowser.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/MainWindow.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/Views/Windows/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/Properties/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/Properties/Resources.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/Properties/Resources.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AssemblyBrowser.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowser.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AssemblyBrowserApplication/Views/Windows/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowserApplication/Views/Windows/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Disassembler/Service/Impl/Disassembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Disassembler/Service/Impl/Disassembler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,23 +70,23 @@
         <option value="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/ApplicationViewModel.cs" />
         <option value="$PROJECT_DIR$/Disassembler/Service/Impl/DisassemblerServiceImpl.cs" />
         <option value="$PROJECT_DIR$/Disassembler/Service/IDisassembler.cs" />
-        <option value="$PROJECT_DIR$/DisassemblerTest/Tests.cs" />
         <option value="$PROJECT_DIR$/AssemblyBrowserApplication/App.xaml" />
         <option value="$PROJECT_DIR$/Disassembler/Entity/AssemblyInfo.cs" />
-        <option value="$PROJECT_DIR$/Disassembler/Entity/ClassInfo.cs" />
         <option value="$PROJECT_DIR$/Disassembler/Entity/NamespaceInfo.cs" />
         <option value="$PROJECT_DIR$/AssemblyBrowserApplication/Views/Windows/MainWindow.xaml.cs" />
         <option value="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Command/OpenAssemblyCommand.cs" />
         <option value="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Command/RelayCommand.cs" />
-        <option value="$PROJECT_DIR$/AssemblyBrowserApplication/Models/DisassemblerModel.cs" />
         <option value="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/DisassemblerViewModel.cs" />
-        <option value="$PROJECT_DIR$/Disassembler/Service/Impl/Disassembler.cs" />
-        <option value="$PROJECT_DIR$/AssemblyBrowserApplication/Views/Windows/MainWindow.xaml" />
         <option value="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Converter/ClassConverter.cs" />
         <option value="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Converter/ConstructorConverter.cs" />
         <option value="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Converter/FieldConverter.cs" />
-        <option value="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Converter/MethodConverter.cs" />
         <option value="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Converter/TypenameBuilder.cs" />
+        <option value="$PROJECT_DIR$/AssemblyBrowserApplication/Models/DisassemblerModel.cs" />
+        <option value="$PROJECT_DIR$/AssemblyBrowserApplication/Views/Windows/MainWindow.xaml" />
+        <option value="$PROJECT_DIR$/AssemblyBrowserApplication/ViewModels/Converter/MethodConverter.cs" />
+        <option value="$PROJECT_DIR$/Disassembler/Entity/ClassInfo.cs" />
+        <option value="$PROJECT_DIR$/Disassembler/Service/Impl/Disassembler.cs" />
+        <option value="$PROJECT_DIR$/DisassemblerTest/Tests.cs" />
       </list>
     </option>
   </component>
@@ -140,7 +101,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.AssemblyBrowserApplication">
+  <component name="RunManager" selected="fbe50afc-b0a7-4455-b1e0-20785415c499">
     <configuration name="AssemblyBrowser" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -194,7 +155,7 @@
       <workItem from="1603870331104" duration="2288000" />
       <workItem from="1603889695223" duration="1098000" />
       <workItem from="1603896285956" duration="777000" />
-      <workItem from="1604241250642" duration="15853000" />
+      <workItem from="1604241250642" duration="18473000" />
     </task>
     <task id="LOCAL-00001" summary="init: project create">
       <created>1603306670809</created>
@@ -203,7 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603306670809</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add assembly browser">
+      <created>1604260799716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604260799716</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: add assembly browser">
+      <created>1604260860157</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604260860157</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +201,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init: project create" />
-    <option name="LAST_COMMIT_MESSAGE" value="init: project create" />
+    <MESSAGE value="feat: add assembly browser" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add assembly browser" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2064" y="0" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604242736318">
@@ -239,28 +215,28 @@
     </state>
     <state x="2627" y="390" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1280.689/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604260716391" />
     <state x="707" y="390" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1050@0.0.1920.1050" timestamp="1603896404086" />
-    <state width="1877" height="122" key="GridCell.Tab.0.bottom" timestamp="1604260557896">
+    <state width="1877" height="122" key="GridCell.Tab.0.bottom" timestamp="1604263325142">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="122" key="GridCell.Tab.0.bottom/0.0.1280.689/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604260557896" />
+    <state width="1877" height="122" key="GridCell.Tab.0.bottom/0.0.1280.689/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604263325142" />
     <state width="1239" height="166" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1603654445534" />
     <state width="1879" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603308660546" />
-    <state width="1877" height="122" key="GridCell.Tab.0.center" timestamp="1604260557896">
+    <state width="1877" height="122" key="GridCell.Tab.0.center" timestamp="1604263325142">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="122" key="GridCell.Tab.0.center/0.0.1280.689/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604260557896" />
+    <state width="1877" height="122" key="GridCell.Tab.0.center/0.0.1280.689/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604263325142" />
     <state width="1239" height="166" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1603654445534" />
     <state width="1879" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603308660546" />
-    <state width="1877" height="122" key="GridCell.Tab.0.left" timestamp="1604260557896">
+    <state width="1877" height="122" key="GridCell.Tab.0.left" timestamp="1604263325142">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="122" key="GridCell.Tab.0.left/0.0.1280.689/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604260557896" />
+    <state width="1877" height="122" key="GridCell.Tab.0.left/0.0.1280.689/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604263325142" />
     <state width="1239" height="166" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1603654445534" />
     <state width="1879" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603308660546" />
-    <state width="1877" height="122" key="GridCell.Tab.0.right" timestamp="1604260557896">
+    <state width="1877" height="122" key="GridCell.Tab.0.right" timestamp="1604263325142">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="122" key="GridCell.Tab.0.right/0.0.1280.689/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604260557896" />
+    <state width="1877" height="122" key="GridCell.Tab.0.right/0.0.1280.689/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604263325142" />
     <state width="1239" height="166" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1603654445534" />
     <state width="1879" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603308660546" />
     <state x="1032" y="257" key="Rider.ProjectTemplateDialog.Size" timestamp="1603307771524">

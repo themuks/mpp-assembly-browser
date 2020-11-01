@@ -25,15 +25,16 @@ namespace Disassembler.Service.Impl
 
                 var classInfo = new ClassInfo(type);
                 namespaceInfo.Classes.Add(classInfo);
-                classInfo.Constructors.AddRange(type.GetConstructors().Where(IsNotCompilerGeneratedAttribute));
-                classInfo.Properties.AddRange(type.GetProperties().Where(IsNotCompilerGeneratedAttribute));
-                classInfo.Fields.AddRange(type.GetFields().Where(IsNotCompilerGeneratedAttribute));
-                foreach (var methodInfo in type.GetMethods())
+                const BindingFlags bindingFlags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static;
+                classInfo.Constructors.AddRange(type.GetConstructors(bindingFlags).Where(IsNotCompilerGeneratedAttribute));
+                classInfo.Properties.AddRange(type.GetProperties(bindingFlags).Where(IsNotCompilerGeneratedAttribute));
+                classInfo.Fields.AddRange(type.GetFields(bindingFlags).Where(IsNotCompilerGeneratedAttribute));
+                foreach (var methodInfo in type.GetMethods(bindingFlags))
                     if (IsExtensionMethod(methodInfo))
                     {
                         var extType = methodInfo.GetParameters()[0].ParameterType;
                         var extNamespaceInfo = new NamespaceInfo(extType.Namespace ?? "<global>");
-                        if (assemblyInfo.Namespaces.Any(n => n.Name != extNamespaceInfo.Name) &&
+                        if (assemblyInfo.Namespaces.All(n => n.Name != extNamespaceInfo.Name) &&
                             !IsExtenstionClass(type))
                             assemblyInfo.Namespaces.Add(extNamespaceInfo);
                         else
@@ -41,18 +42,18 @@ namespace Disassembler.Service.Impl
                                 assemblyInfo.Namespaces.First(n => n.Name == extNamespaceInfo.Name);
 
                         var extClassInfo = new ClassInfo(extType);
-                        if (!extNamespaceInfo.Classes.Any(n => n.ClassType.Name == extClassInfo.ClassType.Name))
+                        if (extNamespaceInfo.Classes.All(n => n.ClassType.Name != extClassInfo.ClassType.Name))
                             extNamespaceInfo.Classes.Add(extClassInfo);
                         else
                             extClassInfo = extNamespaceInfo.Classes.First(n =>
                                 n.ClassType.Name == extClassInfo.ClassType.Name);
 
                         if (IsNotCompilerGeneratedAttribute(methodInfo))
-                            extClassInfo.Methods.Add(new Entity.MethodInfo(methodInfo));
+                            extClassInfo.Methods.Add(new Entity.MethodInfo(methodInfo, true));
                     }
                     else
                     {
-                        if (IsExtensionMethod(methodInfo)) classInfo.Methods.Add(new Entity.MethodInfo(methodInfo));
+                        if (IsNotCompilerGeneratedAttribute(methodInfo)) classInfo.Methods.Add(new Entity.MethodInfo(methodInfo));
                     }
             }
 
@@ -61,7 +62,7 @@ namespace Disassembler.Service.Impl
 
         private static bool IsExtenstionClass(Type type)
         {
-            return type.IsAbstract && type.IsSealed && type.GetMethods().All(info => IsExtensionMethod(info));
+            return type.IsAbstract && type.IsSealed && type.GetMethods().All(IsExtensionMethod);
         }
 
         private static bool IsExtensionMethod(MethodInfo methodInfo)
